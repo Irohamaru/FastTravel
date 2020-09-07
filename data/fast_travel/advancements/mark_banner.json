@@ -1,0 +1,18 @@
+{
+    "criteria": {
+        "mark_banner": {
+            "trigger": "minecraft:item_used_on_block",
+            "conditions": {
+                "block": {
+                    "type": "#minecraft:banners"
+                },
+                "item": {
+                    "item": "minecraft:filled_map"
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "fast_travel:mark_banner/main"
+    }
+}

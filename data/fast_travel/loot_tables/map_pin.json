@@ -1,0 +1,19 @@
+{
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:redstone_torch",
+            "functions": [
+              {
+                "function": "minecraft:set_nbt",
+                "tag": "{MapPin:1b,Enchantments:[{}],display:{Name:'{\"text\":\"マップピン\",\"color\":\"gold\",\"bold\":true,\"italic\":false}',Lore:['{\"translate\":\"%s\",\"with\":[{\"keybind\":\"key.drop\"}],\"color\":\"white\",\"bold\":false,\"italic\":false,\"extra\":[{\"text\":\"でピンを投げて\",\"color\":\"white\",\"bold\":true,\"italic\":false}]}','{\"text\":\"選択中のマーカーにテレポート\",\"color\":\"white\",\"bold\":true,\"italic\":false}']}}"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
