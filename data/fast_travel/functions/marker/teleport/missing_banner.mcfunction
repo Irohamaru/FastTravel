@@ -1,5 +1,5 @@
 #キャンセル用マーカー召喚
-execute align xyz run summon area_effect_cloud ~0.5 ~0.9 ~0.5 {Tags:[Marker,UndoMarker,New],Duration:200,Radius:0.5f,Particle:"minecraft:dust 1 1 1 0.5",Owner:[I;0,0,0,0]}
+execute align xyz run summon area_effect_cloud ~0.5 ~0.9 ~0.5 {Tags:[Marker,UndoMarker,New],Duration:200,Particle:"block air",Radius:0.5f,Particle:"minecraft:dust 1 1 1 0.5",Owner:[I;0,0,0,0]}
 #看板設置
 execute in dimension:void run forceload add 2 2
 execute in dimension:void run setblock 2 0 2 oak_sign

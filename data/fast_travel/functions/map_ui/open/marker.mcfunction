@@ -32,15 +32,16 @@ execute store result entity @e[tag=MarkerPos,tag=New,distance=..2,limit=1] Pos[1
 execute if score #Facing FastTravel matches 4..5 store result entity @e[tag=MarkerPos,tag=New,distance=..2,limit=1] Pos[2] double 0.00048828125 run scoreboard players get #Z FastTravel
 
 #表示用AEC召喚
-execute positioned as @e[tag=MarkerPos,tag=New,distance=..2,limit=1] run summon area_effect_cloud ^ ^ ^0.1 {Tags:[Marker,TeleportMarker,New],Duration:2100000000,Radius:0.01f,Owner:[I;0,0,0,0]}
-data modify entity @e[tag=Marker,tag=New,distance=..2,limit=1] Particle set from storage fast_travel: Marks[-1].Particle
-data modify entity @e[tag=Marker,tag=New,distance=..2,limit=1] CustomName set from storage fast_travel: Marks[-1].CustomName
-data modify entity @e[tag=Marker,tag=New,distance=..2,limit=1] Tags append from storage fast_travel: Marks[-1].Dimension
+execute positioned as @e[tag=MarkerPos,tag=New,distance=..2,limit=1] run summon area_effect_cloud ^ ^ ^0.1 {Tags:[Marker,TeleportMarker,New,New2],Duration:2100000000,Particle:"block air",Radius:0.01f,Owner:[I;0,0,0,0]}
+data modify entity @e[tag=Marker,tag=New2,distance=..2,limit=1] Particle set from storage fast_travel: Marks[-1].Particle
+data modify entity @e[tag=Marker,tag=New2,distance=..2,limit=1] CustomName set from storage fast_travel: Marks[-1].CustomName
+data modify entity @e[tag=Marker,tag=New2,distance=..2,limit=1] Tags append from storage fast_travel: Marks[-1].Dimension
 #バナーPos代入
-data modify entity @e[tag=Marker,tag=New,distance=..2,limit=1] Owner[1] set from storage fast_travel: Marks[-1].x
-data modify entity @e[tag=Marker,tag=New,distance=..2,limit=1] Owner[2] set from storage fast_travel: Marks[-1].y
-data modify entity @e[tag=Marker,tag=New,distance=..2,limit=1] Owner[3] set from storage fast_travel: Marks[-1].z
+data modify entity @e[tag=Marker,tag=New2,distance=..2,limit=1] Owner[1] set from storage fast_travel: Marks[-1].x
+data modify entity @e[tag=Marker,tag=New2,distance=..2,limit=1] Owner[2] set from storage fast_travel: Marks[-1].y
+data modify entity @e[tag=Marker,tag=New2,distance=..2,limit=1] Owner[3] set from storage fast_travel: Marks[-1].z
 
+tag @e[tag=Marker,tag=New2,distance=..2] remove New2
 kill @e[tag=MarkerPos,tag=New,distance=..2]
 
 data remove storage fast_travel: Marks[-1]

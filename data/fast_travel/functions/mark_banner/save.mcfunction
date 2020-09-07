@@ -21,4 +21,4 @@ execute unless data storage fast_travel: TempMark.CustomName run data modify sto
 data modify storage fast_travel: TempMark.Dimension set from entity @s Dimension
 
 #キャンセル用マーカー召喚
-execute align xyz run summon area_effect_cloud ~0.5 ~0.9 ~0.5 {Tags:[Marker,UndoMarker,New],Duration:200,Radius:0.5f,Owner:[I;0,0,0,0]}
+execute align xyz run summon area_effect_cloud ~0.5 ~0.9 ~0.5 {Tags:[Marker,UndoMarker,New],Duration:200,Particle:"block air",Radius:0.5f,Owner:[I;0,0,0,0]}
