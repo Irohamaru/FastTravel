@@ -3,6 +3,7 @@
 地図のバナーアイコンにファストトラベルできるデータパック  
 Minecraft map fast travel datapack
 
+![thumbnail](https://pbs.twimg.com/media/EhUExieUYAAjgeU?format=jpg&name=small)
 ## バージョン
 Minecraft version 1.16.2～
 
@@ -30,5 +31,7 @@ https://github.com/Ai-Akaishi/OhMyDat
 　地図の縮尺を合わせるとバナーの位置が正しく描画されます。     
 ・バナーマーカー：バナーの位置にテレポート
 
+## 連絡はこちら
+https://twitter.com/irohamaru3
 ## ライセンス
 These codes are released under the MIT License, see LICENSE.
