@@ -5,8 +5,8 @@ execute in dimension:void run setblock 2 2 2 shulker_box
 
 #マップをgive
 execute as @e[tag=FTMap,distance=..2,limit=1,sort=nearest] in dimension:void run data modify block 2 2 2 Items append from entity @s Item
-execute if data entity @s SelectedItem in dimension:void run loot give @s mine 2 2 2
-execute unless data entity @s SelectedItem in dimension:void run loot replace entity @s weapon.mainhand mine 2 2 2
+execute if data entity @s SelectedItem in dimension:void run loot give @s mine 2 2 2 debug_stick
+execute unless data entity @s SelectedItem in dimension:void run loot replace entity @s weapon.mainhand mine 2 2 2 debug_stick
 
 #シュルカーボックス削除
 execute in dimension:void run setblock 2 2 2 minecraft:air
